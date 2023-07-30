@@ -40,11 +40,11 @@ function App() {
             signer
           );
          
-          
+          console.log(contract);
 
           setaccount(account);
           setState({ provider, signer, contract });
-          
+
         }
         else {
           alert("please install metamask")
@@ -54,10 +54,12 @@ function App() {
       }
     };
     connectWallet()
-    console.log('st', state);
+    
 
 
   }, []);
+  
+  console.log('st', state);
   return <div className="App">
     eth
   </div>;
